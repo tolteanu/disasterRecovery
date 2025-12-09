@@ -1,0 +1,5805 @@
+{
+  "$id": "restoration",
+  "$schema": "https://schema.yext.com/config/km/connector/v7",
+  "displayName": "Entity Restoration",
+  "source": {
+    "sourceConfig": {
+      "fileUploadConfig": {
+        "dataFormat": "CSV",
+        "config": {
+          "csv": {
+            "columnDelimiter": ",",
+            "hasHeader": true
+          }
+        }
+      }
+    },
+    "selectors": [
+      {
+        "type": "COLUMN",
+        "header": "ENTITY_ID",
+        "column": {
+          "header": "ENTITY_ID"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "accessHours",
+        "column": {
+          "header": "accessHours"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "additionalHoursText",
+        "column": {
+          "header": "additionalHoursText"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "address",
+        "column": {
+          "header": "address"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "addressHidden",
+        "column": {
+          "header": "addressHidden"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "alternateNames",
+        "column": {
+          "header": "alternateNames"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "alternatePhone",
+        "column": {
+          "header": "alternatePhone"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "alternateWebsites",
+        "column": {
+          "header": "alternateWebsites"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "androidAppUrl",
+        "column": {
+          "header": "androidAppUrl"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "appleActionLinks",
+        "column": {
+          "header": "appleActionLinks"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "appleBusinessDescription",
+        "column": {
+          "header": "appleBusinessDescription"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "appleBusinessId",
+        "column": {
+          "header": "appleBusinessId"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "appleBusinessIdDqe",
+        "column": {
+          "header": "appleBusinessIdDqe"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "appleCompanyId",
+        "column": {
+          "header": "appleCompanyId"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "appleCompanyIdDqe",
+        "column": {
+          "header": "appleCompanyIdDqe"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "associations",
+        "column": {
+          "header": "associations"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "bingAdAccountNumber",
+        "column": {
+          "header": "bingAdAccountNumber"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "bingAdCampaign",
+        "column": {
+          "header": "bingAdCampaign"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "bingAdGroup",
+        "column": {
+          "header": "bingAdGroup"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "bingAdProfession",
+        "column": {
+          "header": "bingAdProfession"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "bingParentLocation",
+        "column": {
+          "header": "bingParentLocation"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "bingRelationshipType",
+        "column": {
+          "header": "bingRelationshipType"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "bingWebsiteOverride",
+        "column": {
+          "header": "bingWebsiteOverride"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "bios",
+        "column": {
+          "header": "bios"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "blackOwnedBusiness",
+        "column": {
+          "header": "blackOwnedBusiness"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "bookingDotComPropertyId",
+        "column": {
+          "header": "bookingDotComPropertyId"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "brands",
+        "column": {
+          "header": "brands"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "brunchHours",
+        "column": {
+          "header": "brunchHours"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "businessId",
+        "column": {
+          "header": "businessId"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "c_driveThruHours",
+        "column": {
+          "header": "c_driveThruHours"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "c_facebookWebsiteOverride",
+        "column": {
+          "header": "c_facebookWebsiteOverride"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "c_holidayhours",
+        "column": {
+          "header": "c_holidayhours"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "c_keyWords",
+        "column": {
+          "header": "c_keyWords"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "c_openDate",
+        "column": {
+          "header": "c_openDate"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "c_reopen_date",
+        "column": {
+          "header": "c_reopen_date"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "calendars",
+        "column": {
+          "header": "calendars"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "cityCoordinate",
+        "column": {
+          "header": "cityCoordinate"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "closed",
+        "column": {
+          "header": "closed"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "countryCode",
+        "column": {
+          "header": "countryCode"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "covid19InformationUrl",
+        "column": {
+          "header": "covid19InformationUrl"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "covidMessaging",
+        "column": {
+          "header": "covidMessaging"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "customKeywords",
+        "column": {
+          "header": "customKeywords"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "deliverListingsWithoutGeocode",
+        "column": {
+          "header": "deliverListingsWithoutGeocode"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "deliveryHours",
+        "column": {
+          "header": "deliveryHours"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "deliveryUrl",
+        "column": {
+          "header": "deliveryUrl"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "description",
+        "column": {
+          "header": "description"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "dineInHours",
+        "column": {
+          "header": "dineInHours"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "displayCoordinate",
+        "column": {
+          "header": "displayCoordinate"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "driveThroughHours",
+        "column": {
+          "header": "driveThroughHours"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "dropoffCoordinate",
+        "column": {
+          "header": "dropoffCoordinate"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "emails",
+        "column": {
+          "header": "emails"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "entityId",
+        "column": {
+          "header": "entityId"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "entityTypeId",
+        "column": {
+          "header": "entityTypeId"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "facebookAbout",
+        "column": {
+          "header": "facebookAbout"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "facebookCallToAction",
+        "column": {
+          "header": "facebookCallToAction"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "facebookCoverPhoto",
+        "column": {
+          "header": "facebookCoverPhoto"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "facebookDescriptor",
+        "column": {
+          "header": "facebookDescriptor"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "facebookName",
+        "column": {
+          "header": "facebookName"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "facebookOverrideCity",
+        "column": {
+          "header": "facebookOverrideCity"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "facebookPageUrl",
+        "column": {
+          "header": "facebookPageUrl"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "facebookProfilePhoto",
+        "column": {
+          "header": "facebookProfilePhoto"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "facebookVanityUrl",
+        "column": {
+          "header": "facebookVanityUrl"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "facebookWebsiteOverride",
+        "column": {
+          "header": "facebookWebsiteOverride"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "fax",
+        "column": {
+          "header": "fax"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "featuredMessage",
+        "column": {
+          "header": "featuredMessage"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "frequentlyAskedQuestions",
+        "column": {
+          "header": "frequentlyAskedQuestions"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "fullyVaccinatedStaff",
+        "column": {
+          "header": "fullyVaccinatedStaff"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "geocodedCoordinate",
+        "column": {
+          "header": "geocodedCoordinate"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "geomodifier",
+        "column": {
+          "header": "geomodifier"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "googleAccountId",
+        "column": {
+          "header": "googleAccountId"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "googleAdministratorEmail",
+        "column": {
+          "header": "googleAdministratorEmail"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "googleCoverPhoto",
+        "column": {
+          "header": "googleCoverPhoto"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "googleEntityRelationship",
+        "column": {
+          "header": "googleEntityRelationship"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "googleMyBusinessLabels",
+        "column": {
+          "header": "googleMyBusinessLabels"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "googlePlaceId",
+        "column": {
+          "header": "googlePlaceId"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "googleProfilePhoto",
+        "column": {
+          "header": "googleProfilePhoto"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "googleShortName",
+        "column": {
+          "header": "googleShortName"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "googleWebsiteOverride",
+        "column": {
+          "header": "googleWebsiteOverride"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "happyHours",
+        "column": {
+          "header": "happyHours"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "holidayHoursConversationEnabled",
+        "column": {
+          "header": "holidayHoursConversationEnabled"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "hours",
+        "column": {
+          "header": "hours"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "impressum",
+        "column": {
+          "header": "impressum"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "instagramHandle",
+        "column": {
+          "header": "instagramHandle"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "iosAppUrl",
+        "column": {
+          "header": "iosAppUrl"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "isoRegionCode",
+        "column": {
+          "header": "isoRegionCode"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "keywords",
+        "column": {
+          "header": "keywords"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "kitchenHours",
+        "column": {
+          "header": "kitchenHours"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "labels",
+        "column": {
+          "header": "labels"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "landingPageUrl",
+        "column": {
+          "header": "landingPageUrl"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "languages",
+        "column": {
+          "header": "languages"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "linkedInUrl",
+        "column": {
+          "header": "linkedInUrl"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "localPhone",
+        "column": {
+          "header": "localPhone"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "localeCode",
+        "column": {
+          "header": "localeCode"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "logo",
+        "column": {
+          "header": "logo"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "mainPhone",
+        "column": {
+          "header": "mainPhone"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "menuUrl",
+        "column": {
+          "header": "menuUrl"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "menus",
+        "column": {
+          "header": "menus"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "mobilePhone",
+        "column": {
+          "header": "mobilePhone"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "name",
+        "column": {
+          "header": "name"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "neighborhood",
+        "column": {
+          "header": "neighborhood"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "nudgeEnabled",
+        "column": {
+          "header": "nudgeEnabled"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "onlineServiceHours",
+        "column": {
+          "header": "onlineServiceHours"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "orderUrl",
+        "column": {
+          "header": "orderUrl"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "paymentOptions",
+        "column": {
+          "header": "paymentOptions"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "phoneticName",
+        "column": {
+          "header": "phoneticName"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "photoGallery",
+        "column": {
+          "header": "photoGallery"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "pickupAndDeliveryServices",
+        "column": {
+          "header": "pickupAndDeliveryServices"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "pickupCoordinate",
+        "column": {
+          "header": "pickupCoordinate"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "pickupHours",
+        "column": {
+          "header": "pickupHours"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "pinterestUrl",
+        "column": {
+          "header": "pinterestUrl"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "priceRange",
+        "column": {
+          "header": "priceRange"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "primaryConversationContact",
+        "column": {
+          "header": "primaryConversationContact"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "productLists",
+        "column": {
+          "header": "productLists"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "products",
+        "column": {
+          "header": "products"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "proofOfVaccinationRequired",
+        "column": {
+          "header": "proofOfVaccinationRequired"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "questionsAndAnswers",
+        "column": {
+          "header": "questionsAndAnswers"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "rankTrackingCompetitors",
+        "column": {
+          "header": "rankTrackingCompetitors"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "rankTrackingEnabled",
+        "column": {
+          "header": "rankTrackingEnabled"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "rankTrackingFrequency",
+        "column": {
+          "header": "rankTrackingFrequency"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "rankTrackingKeywords",
+        "column": {
+          "header": "rankTrackingKeywords"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "rankTrackingQueryTemplates",
+        "column": {
+          "header": "rankTrackingQueryTemplates"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "rankTrackingSites",
+        "column": {
+          "header": "rankTrackingSites"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "reservationUrl",
+        "column": {
+          "header": "reservationUrl"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "reviewResponseConversationEnabled",
+        "column": {
+          "header": "reviewResponseConversationEnabled"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "routableCoordinate",
+        "column": {
+          "header": "routableCoordinate"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "seniorHours",
+        "column": {
+          "header": "seniorHours"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "serviceArea",
+        "column": {
+          "header": "serviceArea"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "serviceAreaPlaces",
+        "column": {
+          "header": "serviceAreaPlaces"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "services",
+        "column": {
+          "header": "services"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "slug",
+        "column": {
+          "header": "slug"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "specialities",
+        "column": {
+          "header": "specialities"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "takeoutHours",
+        "column": {
+          "header": "takeoutHours"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "tikTokUrl",
+        "column": {
+          "header": "tikTokUrl"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "timezone",
+        "column": {
+          "header": "timezone"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "tollFreePhone",
+        "column": {
+          "header": "tollFreePhone"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "ttyPhone",
+        "column": {
+          "header": "ttyPhone"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "twitterHandle",
+        "column": {
+          "header": "twitterHandle"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "uberClientId",
+        "column": {
+          "header": "uberClientId"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "uberLink",
+        "column": {
+          "header": "uberLink"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "uberTripBranding",
+        "column": {
+          "header": "uberTripBranding"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "videos",
+        "column": {
+          "header": "videos"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "websiteUrl",
+        "column": {
+          "header": "websiteUrl"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "what3WordsAddress",
+        "column": {
+          "header": "what3WordsAddress"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "yearEstablished",
+        "column": {
+          "header": "yearEstablished"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "yelpWebsiteOverride",
+        "column": {
+          "header": "yelpWebsiteOverride"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "yextDisplayCoordinate",
+        "column": {
+          "header": "yextDisplayCoordinate"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "yextDropoffCoordinate",
+        "column": {
+          "header": "yextDropoffCoordinate"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "yextId",
+        "column": {
+          "header": "yextId"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "yextPickupCoordinate",
+        "column": {
+          "header": "yextPickupCoordinate"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "yextRoutableCoordinate",
+        "column": {
+          "header": "yextRoutableCoordinate"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "yextWalkableCoordinate",
+        "column": {
+          "header": "yextWalkableCoordinate"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "youTubeChannelUrl",
+        "column": {
+          "header": "youTubeChannelUrl"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "appleCoverPhoto",
+        "column": {
+          "header": "appleCoverPhoto"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "appleDisplayName",
+        "column": {
+          "header": "appleDisplayName"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "walkableCoordinate",
+        "column": {
+          "header": "walkableCoordinate"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "body",
+        "column": {
+          "header": "body"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "c_activeInCLRiskManagement",
+        "column": {
+          "header": "c_activeInCLRiskManagement"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "c_pDF",
+        "column": {
+          "header": "c_pDF"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "c_pDFFile",
+        "column": {
+          "header": "c_pDFFile"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "c_primaryCTA",
+        "column": {
+          "header": "c_primaryCTA"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "savedFilters",
+        "column": {
+          "header": "savedFilters"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "shortDescription",
+        "column": {
+          "header": "shortDescription"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "bodyV2",
+        "column": {
+          "header": "bodyV2"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "externalArticlePostDate",
+        "column": {
+          "header": "externalArticlePostDate"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "externalArticleUpdateDate",
+        "column": {
+          "header": "externalArticleUpdateDate"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "promoted",
+        "column": {
+          "header": "promoted"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "shortDescriptionV2",
+        "column": {
+          "header": "shortDescriptionV2"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "voteCount",
+        "column": {
+          "header": "voteCount"
+        }
+      },
+      {
+        "type": "COLUMN",
+        "header": "voteSum",
+        "column": {
+          "header": "voteSum"
+        }
+      }
+    ]
+  },
+  "destinationConfig": {
+    "knowledgeGraphConfig": {
+      "entityTypes": [
+        "location",
+        "helpArticle"
+      ]
+    }
+  },
+  "transforms": [
+    {
+      "extractText": {
+        "inputHeader": "accessHours",
+        "newColumnHeader": "Access Hours \u003e Reopen Date",
+        "extractOperation": "SOME_TEXT_AFTER",
+        "extractFrom": "FIRST_INSTANCE_MATCHING_TEXT",
+        "valueToFind": {
+          "plainText": {
+            "value": ",reopenDate:",
+            "ignoreCase": false
+          }
+        },
+        "maxLengthTextToKeep": 10
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "brunchHours",
+        "newColumnHeader": "Brunch Hours \u003e Reopen Date",
+        "extractOperation": "SOME_TEXT_AFTER",
+        "extractFrom": "FIRST_INSTANCE_MATCHING_TEXT",
+        "valueToFind": {
+          "plainText": {
+            "value": ",reopenDate:",
+            "ignoreCase": false
+          }
+        },
+        "maxLengthTextToKeep": 10
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "deliveryHours",
+        "newColumnHeader": "Delivery Hours \u003e Reopen Date",
+        "extractOperation": "SOME_TEXT_AFTER",
+        "extractFrom": "FIRST_INSTANCE_MATCHING_TEXT",
+        "valueToFind": {
+          "plainText": {
+            "value": ",reopenDate:",
+            "ignoreCase": false
+          }
+        },
+        "maxLengthTextToKeep": 10
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "dineInHours",
+        "newColumnHeader": "DineIn Hours \u003e Reopen Date",
+        "extractOperation": "SOME_TEXT_AFTER",
+        "extractFrom": "FIRST_INSTANCE_MATCHING_TEXT",
+        "valueToFind": {
+          "plainText": {
+            "value": ",reopenDate:",
+            "ignoreCase": false
+          }
+        },
+        "maxLengthTextToKeep": 10
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "driveThroughHours",
+        "newColumnHeader": "Drive Through Hours \u003e Reopen Date",
+        "extractOperation": "SOME_TEXT_AFTER",
+        "extractFrom": "FIRST_INSTANCE_MATCHING_TEXT",
+        "valueToFind": {
+          "plainText": {
+            "value": ",reopenDate:",
+            "ignoreCase": false
+          }
+        },
+        "maxLengthTextToKeep": 10
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "happyHours",
+        "newColumnHeader": "Happy Hours \u003e Reopen Date",
+        "extractOperation": "SOME_TEXT_AFTER",
+        "extractFrom": "FIRST_INSTANCE_MATCHING_TEXT",
+        "valueToFind": {
+          "plainText": {
+            "value": ",reopenDate:",
+            "ignoreCase": false
+          }
+        },
+        "maxLengthTextToKeep": 10
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "hours",
+        "newColumnHeader": "Hours \u003e Reopen Date",
+        "extractOperation": "SOME_TEXT_AFTER",
+        "extractFrom": "FIRST_INSTANCE_MATCHING_TEXT",
+        "valueToFind": {
+          "plainText": {
+            "value": ",reopenDate:",
+            "ignoreCase": false
+          }
+        },
+        "maxLengthTextToKeep": 10
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "kitchenHours",
+        "newColumnHeader": "Kitchen Hours \u003e Reopen Date",
+        "extractOperation": "SOME_TEXT_AFTER",
+        "extractFrom": "FIRST_INSTANCE_MATCHING_TEXT",
+        "valueToFind": {
+          "plainText": {
+            "value": ",reopenDate:",
+            "ignoreCase": false
+          }
+        },
+        "maxLengthTextToKeep": 10
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "onlineServiceHours",
+        "newColumnHeader": "Online Service Hours \u003e Reopen Date",
+        "extractOperation": "SOME_TEXT_AFTER",
+        "extractFrom": "FIRST_INSTANCE_MATCHING_TEXT",
+        "valueToFind": {
+          "plainText": {
+            "value": ",reopenDate:",
+            "ignoreCase": false
+          }
+        },
+        "maxLengthTextToKeep": 10
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "pickupHours",
+        "newColumnHeader": "Pickup Hours \u003e Reopen Date",
+        "extractOperation": "SOME_TEXT_AFTER",
+        "extractFrom": "FIRST_INSTANCE_MATCHING_TEXT",
+        "valueToFind": {
+          "plainText": {
+            "value": ",reopenDate:",
+            "ignoreCase": false
+          }
+        },
+        "maxLengthTextToKeep": 10
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "seniorHours",
+        "newColumnHeader": "Senior Hours \u003e reopen date",
+        "extractOperation": "SOME_TEXT_AFTER",
+        "extractFrom": "FIRST_INSTANCE_MATCHING_TEXT",
+        "valueToFind": {
+          "plainText": {
+            "value": ",reopenDate:",
+            "ignoreCase": true
+          }
+        },
+        "maxLengthTextToKeep": 10
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "takeoutHours",
+        "newColumnHeader": "Takeout Hours \u003e Reopen Date",
+        "extractOperation": "SOME_TEXT_AFTER",
+        "extractFrom": "FIRST_INSTANCE_MATCHING_TEXT",
+        "valueToFind": {
+          "plainText": {
+            "value": ",reopenDate:",
+            "ignoreCase": false
+          }
+        },
+        "maxLengthTextToKeep": 10
+      }
+    },
+    {
+      "findAndReplace": {
+        "inputHeaders": {
+          "headers": [
+            "accessHours",
+            "brunchHours",
+            "deliveryHours",
+            "dineInHours",
+            "driveThroughHours",
+            "happyHours",
+            "hours",
+            "kitchenHours",
+            "onlineServiceHours",
+            "pickupHours",
+            "seniorHours",
+            "takeoutHours"
+          ]
+        },
+        "valuesToFind": [
+          {
+            "regex": ",reopenDate:.{10}"
+          }
+        ],
+        "replacement": "",
+        "useAsNonLiteralReplacement": false
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "accessHours",
+        "newColumnHeader": "Access Hours \u003e Holiday Hours",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "FIRST_INSTANCE_MATCHING_TEXT",
+        "valueToFind": {
+          "plainText": {
+            "value": ",holidayHours:",
+            "ignoreCase": false
+          }
+        }
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "brunchHours",
+        "newColumnHeader": "Brunch Hours \u003e Holiday Hours",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "FIRST_INSTANCE_MATCHING_TEXT",
+        "valueToFind": {
+          "plainText": {
+            "value": ",holidayHours:",
+            "ignoreCase": false
+          }
+        }
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "deliveryHours",
+        "newColumnHeader": "Delivery Hours \u003e Holiday Hours",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "FIRST_INSTANCE_MATCHING_TEXT",
+        "valueToFind": {
+          "plainText": {
+            "value": ",holidayHours:",
+            "ignoreCase": false
+          }
+        }
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "dineInHours",
+        "newColumnHeader": "DineIn Hours \u003e Holiday Hours",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "FIRST_INSTANCE_MATCHING_TEXT",
+        "valueToFind": {
+          "plainText": {
+            "value": ",holidayHours:",
+            "ignoreCase": false
+          }
+        }
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "driveThroughHours",
+        "newColumnHeader": "Drive Through Hours \u003e Holiday Hours",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "FIRST_INSTANCE_MATCHING_TEXT",
+        "valueToFind": {
+          "plainText": {
+            "value": ",holidayHours:",
+            "ignoreCase": false
+          }
+        }
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "happyHours",
+        "newColumnHeader": "Happy Hours \u003e Holiday Hours",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "FIRST_INSTANCE_MATCHING_TEXT",
+        "valueToFind": {
+          "plainText": {
+            "value": ",holidayHours:",
+            "ignoreCase": false
+          }
+        }
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "hours",
+        "newColumnHeader": "Hours \u003e Holiday Hours",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "FIRST_INSTANCE_MATCHING_TEXT",
+        "valueToFind": {
+          "plainText": {
+            "value": ",holidayHours:",
+            "ignoreCase": false
+          }
+        }
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "kitchenHours",
+        "newColumnHeader": "Kitchen Hours \u003e Holiday Hours",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "FIRST_INSTANCE_MATCHING_TEXT",
+        "valueToFind": {
+          "plainText": {
+            "value": ",holidayHours:",
+            "ignoreCase": false
+          }
+        }
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "onlineServiceHours",
+        "newColumnHeader": "Online Service Hours \u003e Holiday Hours",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "FIRST_INSTANCE_MATCHING_TEXT",
+        "valueToFind": {
+          "plainText": {
+            "value": ",holidayHours:",
+            "ignoreCase": false
+          }
+        }
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "pickupHours",
+        "newColumnHeader": "Pickup Hours \u003e Holiday Hours",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "FIRST_INSTANCE_MATCHING_TEXT",
+        "valueToFind": {
+          "plainText": {
+            "value": ",holidayHours:",
+            "ignoreCase": false
+          }
+        }
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "seniorHours",
+        "newColumnHeader": "Senior Hours \u003e Holiday Hours",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "FIRST_INSTANCE_MATCHING_TEXT",
+        "valueToFind": {
+          "plainText": {
+            "value": ",holidayHours:",
+            "ignoreCase": false
+          }
+        }
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "takeoutHours",
+        "newColumnHeader": "Takeout Hours \u003e Holiday Hours",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "FIRST_INSTANCE_MATCHING_TEXT",
+        "valueToFind": {
+          "plainText": {
+            "value": ",holidayHours:",
+            "ignoreCase": false
+          }
+        }
+      }
+    },
+    {
+      "findAndReplace": {
+        "inputHeaders": {
+          "headers": [
+            "accessHours",
+            "brunchHours",
+            "deliveryHours",
+            "dineInHours",
+            "driveThroughHours",
+            "happyHours",
+            "hours",
+            "kitchenHours",
+            "onlineServiceHours",
+            "pickupHours",
+            "seniorHours",
+            "takeoutHours"
+          ]
+        },
+        "valuesToFind": [
+          {
+            "regex": ",holidayHours:.*?,monday"
+          }
+        ],
+        "replacement": ",monday",
+        "useAsNonLiteralReplacement": false
+      }
+    },
+    {
+      "function": {
+        "inputHeaders": {
+          "headers": [
+            "accessHours",
+            "brunchHours",
+            "deliveryHours",
+            "dineInHours",
+            "driveThroughHours",
+            "happyHours",
+            "hours",
+            "kitchenHours",
+            "onlineServiceHours",
+            "pickupHours",
+            "seniorHours",
+            "takeoutHours"
+          ]
+        },
+        "plugin": "formathours2",
+        "function": "formatWeeklyHours2"
+      }
+    },
+    {
+      "splitColumn": {
+        "inputHeader": "hours",
+        "newColumnHeaders": [
+          "Hours \u003e friday ",
+          "Hours \u003e Monday ",
+          "Hours \u003e Saturday",
+          "Hours \u003e Sunday",
+          "Hours \u003e Thursday ",
+          "Hours \u003e tuesday ",
+          "Hours \u003e Wednesday"
+        ],
+        "delimiter": ";"
+      }
+    },
+    {
+      "splitColumn": {
+        "inputHeader": "accessHours",
+        "newColumnHeaders": [
+          "access hours \u003e Hours \u003e Friday ",
+          "access hours \u003e Hours \u003e Monday",
+          "access hours \u003e Hours \u003e Saturday ",
+          "access hours \u003e Hours \u003e Sunday",
+          "access hours \u003e Hours \u003e Thursday",
+          "access hours \u003e Hours \u003e Tuesday",
+          "access hours \u003e Hours \u003e Wednesday"
+        ],
+        "delimiter": ";"
+      }
+    },
+    {
+      "splitColumn": {
+        "inputHeader": "brunchHours",
+        "newColumnHeaders": [
+          "brunch hours \u003e Hours \u003e Friday ",
+          "brunch hours \u003e Hours \u003e Monday",
+          "brunch hours \u003e Hours \u003e Saturday",
+          "brunch hours \u003e Hours \u003e Sunday",
+          "brunch hours \u003e Hours \u003e Thursday",
+          "brunch hours \u003e Hours \u003e Tuesday",
+          "brunch hours \u003e Hours \u003e Wednesday"
+        ],
+        "delimiter": ";"
+      }
+    },
+    {
+      "splitColumn": {
+        "inputHeader": "deliveryHours",
+        "newColumnHeaders": [
+          "Delivery Hours \u003e Hours \u003e Friday",
+          "Delivery Hours \u003e Hours \u003e Monday",
+          "Delivery Hours \u003e Hours \u003e Saturday",
+          "Delivery Hours \u003e Hours \u003e Sunday",
+          "Delivery Hours \u003e Hours \u003e Thursday",
+          "Delivery Hours \u003e Hours \u003e Tuesday",
+          "Delivery Hours \u003e Hours \u003e Wednesday"
+        ],
+        "delimiter": ";"
+      }
+    },
+    {
+      "splitColumn": {
+        "inputHeader": "dineInHours",
+        "newColumnHeaders": [
+          "Dine In Hours \u003e Hours \u003e Friday",
+          "Dine In Hours \u003e Hours \u003e Monday",
+          "Dine In Hours \u003e Hours \u003e Saturday",
+          "Dine In Hours \u003e Hours \u003e Sunday",
+          "Dine In Hours \u003e Hours \u003e Thursday",
+          "Dine In Hours \u003e Hours \u003e Tuesday",
+          "Dine In Hours \u003e Hours \u003e Wednesday"
+        ],
+        "delimiter": ";"
+      }
+    },
+    {
+      "splitColumn": {
+        "inputHeader": "driveThroughHours",
+        "newColumnHeaders": [
+          "Drive Through Hours \u003e Hours \u003e Friday",
+          "Drive Through Hours \u003e Hours \u003e Monday",
+          "Drive Through Hours \u003e Hours \u003e Saturday",
+          "Drive Through Hours \u003e Hours \u003e Sunday",
+          "Drive Through Hours \u003e Hours \u003e Thursday",
+          "Drive Through Hours \u003e Hours \u003e Tuesday",
+          "Drive Through Hours \u003e Hours \u003e Wednesday"
+        ],
+        "delimiter": ";"
+      }
+    },
+    {
+      "splitColumn": {
+        "inputHeader": "happyHours",
+        "newColumnHeaders": [
+          "Happy Hours \u003e Hours \u003e Friday",
+          "Happy Hours \u003e Hours \u003e Monday",
+          "Happy Hours \u003e Hours \u003e Saturday",
+          "Happy Hours \u003e Hours \u003e Sunday",
+          "Happy Hours \u003e Hours \u003e Thursday",
+          "Happy Hours \u003e Hours \u003e Tuesday",
+          "Happy Hours \u003e Hours \u003e Wednesday"
+        ],
+        "delimiter": ";"
+      }
+    },
+    {
+      "splitColumn": {
+        "inputHeader": "kitchenHours",
+        "newColumnHeaders": [
+          "Kitchen Hours \u003e Hours \u003e Friday",
+          "Kitchen Hours \u003e Hours \u003e Monday",
+          "Kitchen Hours \u003e Hours \u003e Saturday",
+          "Kitchen Hours \u003e Hours \u003e Sunday",
+          "Kitchen Hours \u003e Hours \u003e Thursday",
+          "Kitchen Hours \u003e Hours \u003e Tuesday",
+          "Kitchen Hours \u003e Hours \u003e Wednesday"
+        ],
+        "delimiter": ";"
+      }
+    },
+    {
+      "splitColumn": {
+        "inputHeader": "onlineServiceHours",
+        "newColumnHeaders": [
+          "Online Service Hours \u003e Hours \u003e Friday",
+          "Online Service Hours \u003e Hours \u003e Monday",
+          "Online Service Hours \u003e Hours \u003e Saturday",
+          "Online Service Hours \u003e Hours \u003e Sunday",
+          "Online Service Hours \u003e Hours \u003e Thursday",
+          "Online Service Hours \u003e Hours \u003e Tuesday",
+          "Online Service Hours \u003e Hours \u003e Wednesday"
+        ],
+        "delimiter": ";"
+      }
+    },
+    {
+      "splitColumn": {
+        "inputHeader": "pickupHours",
+        "newColumnHeaders": [
+          "Pickup Hours \u003e Hours \u003e Friday",
+          "Pickup Hours \u003e Hours \u003e Monday",
+          "Pickup Hours \u003e Hours \u003e Saturday",
+          "Pickup Hours \u003e Hours \u003e Sunday",
+          "Pickup Hours \u003e Hours \u003e Thursday",
+          "Pickup Hours \u003e Hours \u003e Tuesday",
+          "Pickup Hours \u003e Hours \u003e Wednesday"
+        ],
+        "delimiter": ";"
+      }
+    },
+    {
+      "splitColumn": {
+        "inputHeader": "seniorHours",
+        "newColumnHeaders": [
+          "Senior Hours \u003e Hours \u003e Friday",
+          "Senior Hours \u003e Hours \u003e Monday",
+          "Senior Hours \u003e Hours \u003e Saturday",
+          "Senior Hours \u003e Hours \u003e Sunday",
+          "Senior Hours \u003e Hours \u003e Thursday",
+          "Senior Hours \u003e Hours \u003e Tuesday",
+          "Senior Hours \u003e Hours \u003e Wednesday"
+        ],
+        "delimiter": ";"
+      }
+    },
+    {
+      "splitColumn": {
+        "inputHeader": "takeoutHours",
+        "newColumnHeaders": [
+          "Takeout Hours \u003e Hours \u003e Friday",
+          "Takeout Hours \u003e Hours \u003e Monday",
+          "Takeout Hours \u003e Hours \u003e Saturday",
+          "Takeout Hours \u003e Hours \u003e Sunday",
+          "Takeout Hours \u003e Hours \u003e Thursday",
+          "Takeout Hours \u003e Hours \u003e Tuesday",
+          "Takeout Hours \u003e Hours \u003e Wednesday"
+        ],
+        "delimiter": ";"
+      }
+    },
+    {
+      "function": {
+        "inputHeaders": {
+          "headers": [
+            "Hours \u003e Holiday Hours",
+            "Online Service Hours \u003e Holiday Hours",
+            "Pickup Hours \u003e Holiday Hours",
+            "Senior Hours \u003e Holiday Hours"
+          ]
+        },
+        "plugin": "formatHolidayHours2",
+        "function": "formatOperatingHours"
+      }
+    },
+    {
+      "function": {
+        "inputHeaders": {
+          "headers": [
+            "frequentlyAskedQuestions"
+          ]
+        },
+        "plugin": "formatFaqs",
+        "function": "extractQa"
+      }
+    },
+    {
+      "splitColumn": {
+        "inputHeader": "frequentlyAskedQuestions",
+        "newColumnHeaders": [
+          "frequentlyaskedquestions answers",
+          "frequentlyaskedquestions questions"
+        ],
+        "delimiter": "\u0027 ;$; \u0027"
+      }
+    },
+    {
+      "findAndReplace": {
+        "inputHeaders": {
+          "headers": [
+            "menuUrl",
+            "orderUrl",
+            "reservationUrl",
+            "websiteUrl"
+          ]
+        },
+        "valuesToFind": [
+          {
+            "plainText": {
+              "value": "displayUrl:",
+              "ignoreCase": false
+            }
+          },
+          {
+            "plainText": {
+              "value": "preferDisplayUrl:",
+              "ignoreCase": false
+            }
+          },
+          {
+            "plainText": {
+              "value": "url:",
+              "ignoreCase": false
+            }
+          }
+        ],
+        "replacement": "",
+        "useAsNonLiteralReplacement": false
+      }
+    },
+    {
+      "splitColumn": {
+        "inputHeader": "menuUrl",
+        "newColumnHeaders": [
+          "Menu URL \u003e display Url",
+          "Menu URL \u003e prefer Display Url",
+          "Menu URL \u003e url"
+        ],
+        "delimiter": ","
+      }
+    },
+    {
+      "splitColumn": {
+        "inputHeader": "orderUrl",
+        "newColumnHeaders": [
+          "Order Url \u003e Display Url",
+          "Order Url \u003e Prefer Display Url",
+          "Order Url \u003e Url"
+        ],
+        "delimiter": ","
+      }
+    },
+    {
+      "splitColumn": {
+        "inputHeader": "reservationUrl",
+        "newColumnHeaders": [
+          "Reservation Url \u003e Display Url",
+          "Reservation Url \u003e Prefer Display Url",
+          "Reservation Url \u003e Url"
+        ],
+        "delimiter": ","
+      }
+    },
+    {
+      "splitColumn": {
+        "inputHeader": "websiteUrl",
+        "newColumnHeaders": [
+          "Website Url \u003e Display Url",
+          "Website Url \u003e Prefer Display Url",
+          "Website Url \u003e Url"
+        ],
+        "delimiter": ","
+      }
+    },
+    {
+      "splitColumn": {
+        "inputHeader": "cityCoordinate",
+        "newColumnHeaders": [
+          "City Coordinate \u003e Lat",
+          "City Coordinate \u003e Long"
+        ],
+        "delimiter": ","
+      }
+    },
+    {
+      "splitColumn": {
+        "inputHeader": "displayCoordinate",
+        "newColumnHeaders": [
+          "Display Coordinate \u003e Lat",
+          "Display Coordinate \u003e Long"
+        ],
+        "delimiter": ","
+      }
+    },
+    {
+      "splitColumn": {
+        "inputHeader": "dropoffCoordinate",
+        "newColumnHeaders": [
+          "Dropoff Coordinate \u003e Lat",
+          "Dropoff Coordinate \u003e Long"
+        ],
+        "delimiter": ","
+      }
+    },
+    {
+      "splitColumn": {
+        "inputHeader": "geocodedCoordinate",
+        "newColumnHeaders": [
+          "GeoCoded Coordinate \u003e Lat",
+          "GeoCoded Coordinate \u003e Long"
+        ],
+        "delimiter": ","
+      }
+    },
+    {
+      "splitColumn": {
+        "inputHeader": "pickupCoordinate",
+        "newColumnHeaders": [
+          "Pickup Coordinate \u003e Lat",
+          "Pickup Coordinate \u003e Long"
+        ],
+        "delimiter": ","
+      }
+    },
+    {
+      "splitColumn": {
+        "inputHeader": "routableCoordinate",
+        "newColumnHeaders": [
+          "Routable Coordinate \u003e Lat",
+          "Routable Coordinate \u003e Long"
+        ],
+        "delimiter": ","
+      }
+    },
+    {
+      "splitColumn": {
+        "inputHeader": "yextDisplayCoordinate",
+        "newColumnHeaders": [
+          "Yext Display Coordinate \u003e Lat",
+          "Yext Display Coordinate \u003e Long"
+        ],
+        "delimiter": ","
+      }
+    },
+    {
+      "splitColumn": {
+        "inputHeader": "yextDropoffCoordinate",
+        "newColumnHeaders": [
+          "Yext Dropoff Coordinate \u003e Lat",
+          "Yext Dropoff Coordinate \u003e Long"
+        ],
+        "delimiter": ","
+      }
+    },
+    {
+      "splitColumn": {
+        "inputHeader": "yextPickupCoordinate",
+        "newColumnHeaders": [
+          "Yext Pickup Coordinate \u003e Lat",
+          "Yext Pickup Coordinate \u003e Long"
+        ],
+        "delimiter": ","
+      }
+    },
+    {
+      "splitColumn": {
+        "inputHeader": "yextRoutableCoordinate",
+        "newColumnHeaders": [
+          "Yext Routable Coordinate \u003e Lat",
+          "Yext Routable Coordinate \u003e Long"
+        ],
+        "delimiter": ","
+      }
+    },
+    {
+      "splitColumn": {
+        "inputHeader": "yextWalkableCoordinate",
+        "newColumnHeaders": [
+          "Yext Walkable Coordinate \u003e Lat",
+          "Yext Walkable Coordinate \u003e Long"
+        ],
+        "delimiter": ","
+      }
+    },
+    {
+      "findAndReplace": {
+        "inputHeaders": {
+          "headers": [
+            "City Coordinate \u003e Lat",
+            "City Coordinate \u003e Long",
+            "Display Coordinate \u003e Lat",
+            "Display Coordinate \u003e Long",
+            "Dropoff Coordinate \u003e Lat",
+            "Dropoff Coordinate \u003e Long",
+            "GeoCoded Coordinate \u003e Lat",
+            "GeoCoded Coordinate \u003e Long",
+            "Pickup Coordinate \u003e Lat",
+            "Pickup Coordinate \u003e Long",
+            "Routable Coordinate \u003e Lat",
+            "Routable Coordinate \u003e Long",
+            "Yext Display Coordinate \u003e Lat",
+            "Yext Display Coordinate \u003e Long",
+            "Yext Dropoff Coordinate \u003e Lat",
+            "Yext Dropoff Coordinate \u003e Long",
+            "Yext Pickup Coordinate \u003e Lat",
+            "Yext Pickup Coordinate \u003e Long",
+            "Yext Routable Coordinate \u003e Lat",
+            "Yext Routable Coordinate \u003e Long",
+            "Yext Walkable Coordinate \u003e Lat",
+            "Yext Walkable Coordinate \u003e Long"
+          ]
+        },
+        "valuesToFind": [
+          {
+            "plainText": {
+              "value": "latitude:",
+              "ignoreCase": false
+            }
+          },
+          {
+            "plainText": {
+              "value": "longitude:",
+              "ignoreCase": false
+            }
+          }
+        ],
+        "replacement": "",
+        "useAsNonLiteralReplacement": false
+      }
+    },
+    {
+      "splitColumn": {
+        "inputHeader": "googleEntityRelationship",
+        "newColumnHeaders": [
+          "Google Entity Relationship \u003e PlaceID",
+          "Google Entity Relationship \u003e Type"
+        ],
+        "delimiter": ","
+      }
+    },
+    {
+      "findAndReplace": {
+        "inputHeaders": {
+          "headers": [
+            "Google Entity Relationship \u003e PlaceID",
+            "Google Entity Relationship \u003e Type"
+          ]
+        },
+        "valuesToFind": [
+          {
+            "plainText": {
+              "value": "placeId:",
+              "ignoreCase": false
+            }
+          },
+          {
+            "plainText": {
+              "value": "type:",
+              "ignoreCase": false
+            }
+          }
+        ],
+        "replacement": "",
+        "useAsNonLiteralReplacement": false
+      }
+    },
+    {
+      "splitColumn": {
+        "inputHeader": "uberTripBranding",
+        "newColumnHeaders": [
+          "Uber Trip Branding \u003e Description",
+          "Uber Trip Branding \u003e Text"
+        ],
+        "delimiter": ",text:"
+      }
+    },
+    {
+      "splitColumn": {
+        "inputHeader": "Uber Trip Branding \u003e Text",
+        "newColumnHeaders": [
+          "Uber Trip branding \u003e text",
+          "Uber Trip branding \u003e Url"
+        ],
+        "delimiter": ",url:"
+      }
+    },
+    {
+      "findAndReplace": {
+        "inputHeaders": {
+          "headers": [
+            "Uber Trip Branding \u003e Description"
+          ]
+        },
+        "valuesToFind": [
+          {
+            "plainText": {
+              "value": "description:",
+              "ignoreCase": false
+            }
+          }
+        ],
+        "replacement": "",
+        "useAsNonLiteralReplacement": false
+      }
+    },
+    {
+      "splitColumn": {
+        "inputHeader": "uberLink",
+        "newColumnHeaders": [
+          "Uber Link \u003e Presentation",
+          "Uber Link \u003e Text"
+        ],
+        "delimiter": ",text:"
+      }
+    },
+    {
+      "findAndReplace": {
+        "inputHeaders": {
+          "headers": [
+            "Uber Link \u003e Presentation"
+          ]
+        },
+        "valuesToFind": [
+          {
+            "plainText": {
+              "value": "presentation:",
+              "ignoreCase": false
+            }
+          }
+        ],
+        "replacement": "",
+        "useAsNonLiteralReplacement": false
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "googleCoverPhoto",
+        "newColumnHeader": "Google Cover Photo \u003e Url",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "LAST_INSTANCE_MATCHING_TEXT",
+        "valueToFind": {
+          "plainText": {
+            "value": ",url:",
+            "ignoreCase": false
+          }
+        }
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "facebookCoverPhoto",
+        "newColumnHeader": "Facebook Cover Photo \u003e Url",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "LAST_INSTANCE_MATCHING_TEXT",
+        "valueToFind": {
+          "plainText": {
+            "value": ",url:",
+            "ignoreCase": false
+          }
+        }
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "facebookProfilePhoto",
+        "newColumnHeader": "Facebook Profile Photo \u003e Url",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "LAST_INSTANCE_MATCHING_TEXT",
+        "valueToFind": {
+          "plainText": {
+            "value": ",url:",
+            "ignoreCase": false
+          }
+        }
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "googleProfilePhoto",
+        "newColumnHeader": "Google Profile Photo \u003e Url",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "LAST_INSTANCE_MATCHING_TEXT",
+        "valueToFind": {
+          "plainText": {
+            "value": ",url:",
+            "ignoreCase": false
+          }
+        }
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "appleCoverPhoto",
+        "newColumnHeader": "Apple Cover Photo \u003e Url",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "LAST_INSTANCE_MATCHING_TEXT",
+        "valueToFind": {
+          "plainText": {
+            "value": ",url:",
+            "ignoreCase": false
+          }
+        }
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "logo",
+        "newColumnHeader": "Logo \u003e Url",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "LAST_INSTANCE_MATCHING_TEXT",
+        "valueToFind": {
+          "plainText": {
+            "value": ",url:",
+            "ignoreCase": false
+          }
+        }
+      }
+    },
+    {
+      "findAndReplace": {
+        "inputHeaders": {
+          "headers": [
+            "Facebook Cover Photo \u003e Url",
+            "Facebook Profile Photo \u003e Url",
+            "Google Cover Photo \u003e Url",
+            "Google Profile Photo \u003e Url",
+            "Logo \u003e Url",
+            "Apple Cover Photo \u003e Url"
+          ]
+        },
+        "valuesToFind": [
+          {
+            "regex": ",width:.*"
+          },
+          {
+            "plainText": {
+              "value": ",height:.*",
+              "ignoreCase": false
+            }
+          }
+        ],
+        "replacement": "",
+        "useAsNonLiteralReplacement": false
+      }
+    },
+    {
+      "findAndReplace": {
+        "inputHeaders": {
+          "headers": [
+            "facebookCoverPhoto",
+            "facebookProfilePhoto",
+            "googleCoverPhoto",
+            "googleProfilePhoto",
+            "appleCoverPhoto"
+          ]
+        },
+        "valuesToFind": [
+          {
+            "plainText": {
+              "value": "alternateText:",
+              "ignoreCase": false
+            }
+          },
+          {
+            "regex": ",height:.*"
+          },
+          {
+            "regex": ",width:.*"
+          }
+        ],
+        "replacement": "",
+        "useAsNonLiteralReplacement": false
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "logo",
+        "newColumnHeader": "Logo \u003e Clickthrough Url",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "FIRST_INSTANCE_MATCHING_TEXT",
+        "valueToFind": {
+          "plainText": {
+            "value": "clickthroughUrl:",
+            "ignoreCase": false
+          }
+        }
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "logo",
+        "newColumnHeader": "Logo \u003e Description",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "FIRST_INSTANCE_MATCHING_TEXT",
+        "valueToFind": {
+          "plainText": {
+            "value": "description:",
+            "ignoreCase": false
+          }
+        }
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "logo",
+        "newColumnHeader": "Logo \u003e Details",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "FIRST_INSTANCE_MATCHING_TEXT",
+        "valueToFind": {
+          "plainText": {
+            "value": "details:",
+            "ignoreCase": false
+          }
+        }
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "logo",
+        "newColumnHeader": "Logo \u003e Alternate text",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "FIRST_INSTANCE_MATCHING_TEXT",
+        "valueToFind": {
+          "plainText": {
+            "value": "image:alternateText:",
+            "ignoreCase": false
+          }
+        }
+      }
+    },
+    {
+      "findAndReplace": {
+        "inputHeaders": {
+          "headers": [
+            "logo",
+            "Logo \u003e Alternate text",
+            "Logo \u003e Details",
+            "Logo \u003e Description",
+            "Logo \u003e Clickthrough Url",
+            "Logo \u003e Url"
+          ]
+        },
+        "valuesToFind": [
+          {
+            "regex": ",height:.*"
+          },
+          {
+            "regex": ",description:.*"
+          },
+          {
+            "regex": ",image:.*"
+          },
+          {
+            "regex": ",details:.*"
+          },
+          {
+            "regex": ",width:.*"
+          },
+          {
+            "plainText": {
+              "value": "clickthroughUrl:",
+              "ignoreCase": false
+            }
+          },
+          {
+            "regex": "image:.*"
+          }
+        ],
+        "replacement": "",
+        "useAsNonLiteralReplacement": false
+      }
+    },
+    {
+      "function": {
+        "inputHeaders": {
+          "headers": [
+            "appleActionLinks"
+          ]
+        },
+        "plugin": "FormatAppleActionLinks",
+        "function": "groupAppFieldsByType"
+      }
+    },
+    {
+      "splitColumn": {
+        "inputHeader": "appleActionLinks",
+        "newColumnHeaders": [
+          "Apple Action Links \u003e Name",
+          "Apple Action Links \u003e App Store Url",
+          "Apple Action Links \u003e Category",
+          "Apple Action Links \u003e Quick Link"
+        ],
+        "delimiter": "$$"
+      }
+    },
+    {
+      "function": {
+        "inputHeaders": {
+          "headers": [
+            "serviceAreaPlaces"
+          ]
+        },
+        "plugin": "FormatServiceArea",
+        "function": "ServiceArea"
+      }
+    },
+    {
+      "splitColumn": {
+        "inputHeader": "serviceAreaPlaces",
+        "newColumnHeaders": [
+          "Service Area \u003e Google PlaceID",
+          "Service Area \u003e  Name",
+          "Service Area \u003e Type"
+        ],
+        "delimiter": "$$"
+      }
+    },
+    {
+      "function": {
+        "inputHeaders": {
+          "headers": [
+            "rankTrackingCompetitors"
+          ]
+        },
+        "plugin": "formatRankedCompetitors",
+        "function": "formatRankedCompetitors"
+      }
+    },
+    {
+      "splitColumn": {
+        "inputHeader": "rankTrackingCompetitors",
+        "newColumnHeaders": [
+          "Ranked Competitors \u003e Name",
+          "Ranked Competitors \u003e Website"
+        ],
+        "delimiter": "$$"
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "address",
+        "newColumnHeader": "Address \u003e Country Code",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "FIRST_INSTANCE_MATCHING_TEXT",
+        "valueToFind": {
+          "plainText": {
+            "value": ",countryCode:",
+            "ignoreCase": false
+          }
+        }
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "address",
+        "newColumnHeader": "Address \u003e Extra Description",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "FIRST_INSTANCE_MATCHING_TEXT",
+        "valueToFind": {
+          "plainText": {
+            "value": ",extraDescription:",
+            "ignoreCase": false
+          }
+        }
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "address",
+        "newColumnHeader": "Address \u003e Line 1",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "FIRST_INSTANCE_MATCHING_TEXT",
+        "valueToFind": {
+          "plainText": {
+            "value": ",line1:",
+            "ignoreCase": false
+          }
+        }
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "address",
+        "newColumnHeader": "Address \u003e Line 2",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "FIRST_INSTANCE_MATCHING_TEXT",
+        "valueToFind": {
+          "plainText": {
+            "value": ",line2:",
+            "ignoreCase": false
+          }
+        }
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "address",
+        "newColumnHeader": "Address \u003e Postal Code",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "FIRST_INSTANCE_MATCHING_TEXT",
+        "valueToFind": {
+          "plainText": {
+            "value": ",postalCode:",
+            "ignoreCase": false
+          }
+        }
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "address",
+        "newColumnHeader": "Address \u003e Region",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "FIRST_INSTANCE_MATCHING_TEXT",
+        "valueToFind": {
+          "plainText": {
+            "value": ",region:",
+            "ignoreCase": false
+          }
+        }
+      }
+    },
+    {
+      "findAndReplace": {
+        "inputHeaders": {
+          "headers": [
+            "address",
+            "Address \u003e Region",
+            "Address \u003e Postal Code",
+            "Address \u003e Line 2",
+            "Address \u003e Line 1",
+            "Address \u003e Extra Description",
+            "Address \u003e Country Code"
+          ]
+        },
+        "valuesToFind": [
+          {
+            "regex": ",line1:.*"
+          },
+          {
+            "regex": ",line2:.*"
+          },
+          {
+            "regex": ",countryCode:.*"
+          },
+          {
+            "regex": ",region:.*"
+          },
+          {
+            "regex": ",postalCode:.*"
+          },
+          {
+            "plainText": {
+              "value": "city:",
+              "ignoreCase": false
+            }
+          },
+          {
+            "regex": ",extraDescription:.*"
+          }
+        ],
+        "replacement": "",
+        "useAsNonLiteralReplacement": false
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "featuredMessage",
+        "newColumnHeader": "Featured message \u003e Url",
+        "extractOperation": "ALL_TEXT_AFTER",
+        "extractFrom": "FIRST_INSTANCE_MATCHING_TEXT",
+        "valueToFind": {
+          "plainText": {
+            "value": ",url:",
+            "ignoreCase": false
+          }
+        }
+      }
+    },
+    {
+      "findAndReplace": {
+        "inputHeaders": {
+          "headers": [
+            "featuredMessage"
+          ]
+        },
+        "valuesToFind": [
+          {
+            "regex": ",url:.*"
+          },
+          {
+            "plainText": {
+              "value": "description:",
+              "ignoreCase": false
+            }
+          }
+        ],
+        "replacement": "",
+        "useAsNonLiteralReplacement": false
+      }
+    },
+    {
+      "function": {
+        "inputHeaders": {
+          "headers": [
+            "photoGallery"
+          ]
+        },
+        "plugin": "FormatPhotoGallery2",
+        "function": "FormatPhotoGallery2"
+      }
+    },
+    {
+      "splitColumn": {
+        "inputHeader": "photoGallery",
+        "newColumnHeaders": [
+          "Photo Gallery \u003e ClickTroughUrl",
+          "Photo Gallery \u003e Decription",
+          "Photo Gallery \u003e Details",
+          "Photo Gallery \u003e Alternate Text",
+          "Photo Gallery \u003e Url"
+        ],
+        "delimiter": "$$"
+      }
+    },
+    {
+      "function": {
+        "inputHeaders": {
+          "headers": [
+            "videos"
+          ]
+        },
+        "plugin": "FormatVideos",
+        "function": "FormatVideos"
+      }
+    },
+    {
+      "splitColumn": {
+        "inputHeader": "videos",
+        "newColumnHeaders": [
+          "Videos \u003e Description",
+          "Videos \u003e Url"
+        ],
+        "delimiter": "$$"
+      }
+    },
+    {
+      "ignoreColumns": {
+        "columns": [
+          "ENTITY_ID",
+          "accessHours",
+          "appleActionLinks",
+          "brunchHours",
+          "businessId",
+          "c_driveThruHours",
+          "c_facebookWebsiteOverride",
+          "c_holidayhours",
+          "c_keyWords",
+          "c_openDate",
+          "c_reopen_date",
+          "calendars",
+          "cityCoordinate",
+          "countryCode",
+          "deliveryHours",
+          "dineInHours",
+          "displayCoordinate",
+          "Display Coordinate \u003e Lat",
+          "Display Coordinate \u003e Long",
+          "driveThroughHours",
+          "dropoffCoordinate",
+          "Dropoff Coordinate \u003e Lat",
+          "Dropoff Coordinate \u003e Long",
+          "frequentlyAskedQuestions",
+          "geocodedCoordinate",
+          "GeoCoded Coordinate \u003e Lat",
+          "GeoCoded Coordinate \u003e Long",
+          "googleEntityRelationship",
+          "happyHours",
+          "hours",
+          "kitchenHours",
+          "logo",
+          "menuUrl",
+          "menus",
+          "onlineServiceHours",
+          "orderUrl",
+          "photoGallery",
+          "pickupCoordinate",
+          "Pickup Coordinate \u003e Lat",
+          "Pickup Coordinate \u003e Long",
+          "pickupHours",
+          "primaryConversationContact",
+          "productLists",
+          "rankTrackingCompetitors",
+          "reservationUrl",
+          "routableCoordinate",
+          "Routable Coordinate \u003e Lat",
+          "Routable Coordinate \u003e Long",
+          "seniorHours",
+          "serviceArea",
+          "serviceAreaPlaces",
+          "takeoutHours",
+          "uberLink",
+          "uberTripBranding",
+          "Uber Trip Branding \u003e Text",
+          "videos",
+          "websiteUrl",
+          "yextDisplayCoordinate",
+          "yextDropoffCoordinate",
+          "yextId",
+          "yextPickupCoordinate",
+          "yextRoutableCoordinate",
+          "yextWalkableCoordinate",
+          "walkableCoordinate",
+          "c_activeInCLRiskManagement",
+          "c_pDF",
+          "c_pDFFile",
+          "c_primaryCTA"
+        ]
+      }
+    }
+  ],
+  "mappings": [
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "pickupCoordinate",
+      "header": "Yext Pickup Coordinate \u003e Lat",
+      "subfieldPath": [
+        {
+          "name": "latitude"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "appleBusinessId",
+      "header": "appleBusinessId",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "deliveryHours",
+      "header": "Delivery Hours \u003e Hours \u003e Thursday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "thursday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "onlineServiceHours",
+      "header": "Online Service Hours \u003e Hours \u003e Thursday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "thursday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "tikTokUrl",
+      "header": "tikTokUrl",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "rankTrackingKeywords",
+      "header": "rankTrackingKeywords",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "driveThroughHours",
+      "header": "Drive Through Hours \u003e Hours \u003e Monday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "monday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "kitchenHours",
+      "header": "Kitchen Hours \u003e Hours \u003e Thursday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "thursday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "takeoutHours",
+      "header": "Takeout Hours \u003e Hours \u003e Tuesday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "tuesday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "kitchenHours",
+      "header": "Kitchen Hours \u003e Reopen Date",
+      "subfieldPath": [
+        {
+          "name": "reopenDate"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "driveThroughHours",
+      "header": "Drive Through Hours \u003e Hours \u003e Friday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "friday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "brunchHours",
+      "header": "brunch hours \u003e Hours \u003e Saturday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "saturday"
+        }
+      ]
+    },
+    {
+      "fieldFormatConfig": {
+        "listDelimiter": "~"
+      },
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "appleActionLinks",
+      "header": "Apple Action Links \u003e App Store Url",
+      "listSettings": "ADD_TO_EXISTING",
+      "subfieldPath": [
+        {
+          "name": "appStoreUrl"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "brunchHours",
+      "header": "Brunch Hours \u003e Holiday Hours",
+      "listSettings": "ADD_TO_EXISTING",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOLIDAY_HOURS_COMBINED_DATE_TIME_FORMAT",
+            "listDelimiter": "$"
+          },
+          "name": "holidayHours"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "hours",
+      "header": "Hours \u003e Wednesday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "wednesday"
+        }
+      ]
+    },
+    {
+      "fieldFormatConfig": {
+        "listDelimiter": "~"
+      },
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "photoGallery",
+      "header": "Photo Gallery \u003e Url",
+      "listSettings": "ADD_TO_EXISTING",
+      "subfieldPath": [
+        {
+          "name": "image"
+        },
+        {
+          "name": "url"
+        }
+      ]
+    },
+    {
+      "fieldFormatConfig": {
+        "listDelimiter": "~"
+      },
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "appleActionLinks",
+      "header": "Apple Action Links \u003e Name",
+      "listSettings": "ADD_TO_EXISTING",
+      "subfieldPath": [
+        {
+          "name": "appName"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "deliveryHours",
+      "header": "Delivery Hours \u003e Holiday Hours",
+      "listSettings": "ADD_TO_EXISTING",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOLIDAY_HOURS_COMBINED_DATE_TIME_FORMAT",
+            "listDelimiter": "$"
+          },
+          "name": "holidayHours"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "facebookProfilePhoto",
+      "header": "Facebook Profile Photo \u003e Url",
+      "subfieldPath": [
+        {
+          "name": "url"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "localPhone",
+      "header": "localPhone",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "pinterestUrl",
+      "header": "pinterestUrl",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "facebookOverrideCity",
+      "header": "facebookOverrideCity",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "accessHours",
+      "header": "access hours \u003e Hours \u003e Monday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "monday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "deliveryHours",
+      "header": "Delivery Hours \u003e Hours \u003e Monday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "monday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "driveThroughHours",
+      "header": "Drive Through Hours \u003e Hours \u003e Sunday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "sunday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "seniorHours",
+      "header": "Senior Hours \u003e Hours \u003e Monday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "monday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "takeoutHours",
+      "header": "Takeout Hours \u003e Holiday Hours",
+      "listSettings": "ADD_TO_EXISTING",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOLIDAY_HOURS_COMBINED_DATE_TIME_FORMAT",
+            "listDelimiter": "$"
+          },
+          "name": "holidayHours"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "dropoffCoordinate",
+      "header": "Yext Dropoff Coordinate \u003e Lat",
+      "subfieldPath": [
+        {
+          "name": "latitude"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "deliveryHours",
+      "header": "Delivery Hours \u003e Hours \u003e Wednesday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "wednesday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "uberLink",
+      "header": "Uber Link \u003e Text",
+      "subfieldPath": [
+        {
+          "name": "text"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "address",
+      "header": "Address \u003e Postal Code",
+      "subfieldPath": [
+        {
+          "name": "postalCode"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "labels",
+      "header": "labels",
+      "listSettings": "ADD_TO_EXISTING",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "displayCoordinate",
+      "header": "Yext Display Coordinate \u003e Lat",
+      "subfieldPath": [
+        {
+          "name": "latitude"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "pickupHours",
+      "header": "Pickup Hours \u003e Reopen Date",
+      "subfieldPath": [
+        {
+          "name": "reopenDate"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "websiteUrl",
+      "header": "Website Url \u003e Url",
+      "subfieldPath": [
+        {
+          "name": "url"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "pickupCoordinate",
+      "header": "Yext Pickup Coordinate \u003e Long",
+      "subfieldPath": [
+        {
+          "name": "longitude"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "kitchenHours",
+      "header": "Kitchen Hours \u003e Hours \u003e Wednesday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "wednesday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "seniorHours",
+      "header": "Senior Hours \u003e Hours \u003e Wednesday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "wednesday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "routableCoordinate",
+      "header": "Yext Routable Coordinate \u003e Lat",
+      "subfieldPath": [
+        {
+          "name": "latitude"
+        }
+      ]
+    },
+    {
+      "fieldFormatConfig": {
+        "listDelimiter": "~"
+      },
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "rankTrackingCompetitors",
+      "header": "Ranked Competitors \u003e Name",
+      "listSettings": "ADD_TO_EXISTING",
+      "subfieldPath": [
+        {
+          "name": "name"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "hours",
+      "header": "Hours \u003e Saturday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "saturday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "facebookName",
+      "header": "facebookName",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "associations",
+      "header": "associations",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "deliveryHours",
+      "header": "Delivery Hours \u003e Hours \u003e Friday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "friday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "happyHours",
+      "header": "Happy Hours \u003e Hours \u003e Monday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "monday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "googleAccountId",
+      "header": "googleAccountId",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "orderUrl",
+      "header": "Order Url \u003e Prefer Display Url",
+      "subfieldPath": [
+        {
+          "name": "preferDisplayUrl"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "googleCoverPhoto",
+      "header": "googleCoverPhoto",
+      "subfieldPath": [
+        {
+          "name": "alternateText"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "bingAdGroup",
+      "header": "bingAdGroup",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "happyHours",
+      "header": "Happy Hours \u003e Hours \u003e Wednesday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "wednesday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "accessHours",
+      "header": "access hours \u003e Hours \u003e Sunday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "sunday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "driveThroughHours",
+      "header": "Drive Through Hours \u003e Hours \u003e Wednesday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "wednesday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "alternateWebsites",
+      "header": "alternateWebsites",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "takeoutHours",
+      "header": "Takeout Hours \u003e Hours \u003e Saturday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "saturday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "brands",
+      "header": "brands",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "address",
+      "header": "address",
+      "subfieldPath": [
+        {
+          "name": "city"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "languages",
+      "header": "languages",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "kitchenHours",
+      "header": "Kitchen Hours \u003e Holiday Hours",
+      "listSettings": "ADD_TO_EXISTING",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOLIDAY_HOURS_COMBINED_DATE_TIME_FORMAT",
+            "listDelimiter": "$"
+          },
+          "name": "holidayHours"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "rankTrackingFrequency",
+      "header": "rankTrackingFrequency",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "logo",
+      "header": "Logo \u003e Details",
+      "subfieldPath": [
+        {
+          "name": "details"
+        }
+      ]
+    },
+    {
+      "fieldFormatConfig": {
+        "listDelimiter": "~"
+      },
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "serviceAreaPlaces",
+      "header": "Service Area \u003e  Name",
+      "listSettings": "ADD_TO_EXISTING",
+      "subfieldPath": [
+        {
+          "name": "name"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "services",
+      "header": "services",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "dineInHours",
+      "header": "Dine In Hours \u003e Hours \u003e Sunday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "sunday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "additionalHoursText",
+      "header": "additionalHoursText",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "alternateNames",
+      "header": "alternateNames",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "hours",
+      "header": "Hours \u003e friday ",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "friday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "driveThroughHours",
+      "header": "Drive Through Hours \u003e Holiday Hours",
+      "listSettings": "ADD_TO_EXISTING",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOLIDAY_HOURS_COMBINED_DATE_TIME_FORMAT",
+            "listDelimiter": "$"
+          },
+          "name": "holidayHours"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "logo",
+      "header": "Logo \u003e Description",
+      "subfieldPath": [
+        {
+          "name": "description"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "hours",
+      "header": "Hours \u003e Sunday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "sunday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "googleEntityRelationship",
+      "header": "Google Entity Relationship \u003e Type",
+      "subfieldPath": [
+        {
+          "name": "type"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "closed",
+      "header": "closed",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "hours",
+      "header": "Hours \u003e Monday ",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "monday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "deliveryHours",
+      "header": "Delivery Hours \u003e Hours \u003e Sunday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "sunday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "meta.entityType",
+      "header": "entityTypeId",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "bingAdAccountNumber",
+      "header": "bingAdAccountNumber",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "onlineServiceHours",
+      "header": "Online Service Hours \u003e Reopen Date",
+      "subfieldPath": [
+        {
+          "name": "reopenDate"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "keywords",
+      "header": "keywords",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "brunchHours",
+      "header": "brunch hours \u003e Hours \u003e Thursday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "thursday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "accessHours",
+      "header": "access hours \u003e Hours \u003e Tuesday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "tuesday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "rankTrackingEnabled",
+      "header": "rankTrackingEnabled",
+      "subfieldPath": []
+    },
+    {
+      "fieldFormatConfig": {
+        "listDelimiter": "~"
+      },
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "videos",
+      "header": "Videos \u003e Url",
+      "listSettings": "ADD_TO_EXISTING",
+      "subfieldPath": [
+        {
+          "name": "video"
+        },
+        {
+          "name": "url"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "dineInHours",
+      "header": "Dine In Hours \u003e Hours \u003e Wednesday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "wednesday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "pickupHours",
+      "header": "Pickup Hours \u003e Hours \u003e Wednesday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "wednesday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "iosAppUrl",
+      "header": "iosAppUrl",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "dineInHours",
+      "header": "Dine In Hours \u003e Hours \u003e Friday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "friday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "facebookAbout",
+      "header": "facebookAbout",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "seniorHours",
+      "header": "Senior Hours \u003e reopen date",
+      "subfieldPath": [
+        {
+          "name": "reopenDate"
+        }
+      ]
+    },
+    {
+      "fieldFormatConfig": {
+        "listDelimiter": "~"
+      },
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "serviceAreaPlaces",
+      "header": "Service Area \u003e Google PlaceID",
+      "listSettings": "ADD_TO_EXISTING",
+      "subfieldPath": [
+        {
+          "name": "googlePlaceId"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "androidAppUrl",
+      "header": "androidAppUrl",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "appleBusinessDescription",
+      "header": "appleBusinessDescription",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "slug",
+      "header": "slug",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "deliveryHours",
+      "header": "Delivery Hours \u003e Reopen Date",
+      "subfieldPath": [
+        {
+          "name": "reopenDate"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "facebookProfilePhoto",
+      "header": "facebookProfilePhoto",
+      "subfieldPath": [
+        {
+          "name": "alternateText"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "onlineServiceHours",
+      "header": "Online Service Hours \u003e Holiday Hours",
+      "listSettings": "ADD_TO_EXISTING",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOLIDAY_HOURS_COMBINED_DATE_TIME_FORMAT",
+            "listDelimiter": "$"
+          },
+          "name": "holidayHours"
+        }
+      ]
+    },
+    {
+      "fieldFormatConfig": {
+        "listDelimiter": "~"
+      },
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "appleActionLinks",
+      "header": "Apple Action Links \u003e Category",
+      "listSettings": "ADD_TO_EXISTING",
+      "subfieldPath": [
+        {
+          "name": "category"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "brunchHours",
+      "header": "brunch hours \u003e Hours \u003e Monday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "monday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "driveThroughHours",
+      "header": "Drive Through Hours \u003e Reopen Date",
+      "subfieldPath": [
+        {
+          "name": "reopenDate"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "displayCoordinate",
+      "header": "Yext Display Coordinate \u003e Long",
+      "subfieldPath": [
+        {
+          "name": "longitude"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "name",
+      "header": "name",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "neighborhood",
+      "header": "neighborhood",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "isoRegionCode",
+      "header": "isoRegionCode",
+      "subfieldPath": []
+    },
+    {
+      "fieldFormatConfig": {
+        "listDelimiter": "~"
+      },
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "photoGallery",
+      "header": "Photo Gallery \u003e Details",
+      "listSettings": "ADD_TO_EXISTING",
+      "subfieldPath": [
+        {
+          "name": "details"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "rankTrackingSites",
+      "header": "rankTrackingSites",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "onlineServiceHours",
+      "header": "Online Service Hours \u003e Hours \u003e Wednesday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "wednesday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "seniorHours",
+      "header": "Senior Hours \u003e Hours \u003e Friday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "friday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "facebookVanityUrl",
+      "header": "facebookVanityUrl",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "addressHidden",
+      "header": "addressHidden",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "tollFreePhone",
+      "header": "tollFreePhone",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "takeoutHours",
+      "header": "Takeout Hours \u003e Hours \u003e Wednesday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "wednesday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "pickupHours",
+      "header": "Pickup Hours \u003e Hours \u003e Friday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "friday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "description",
+      "header": "description",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "yelpWebsiteOverride",
+      "header": "yelpWebsiteOverride",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "logo",
+      "header": "Logo \u003e Alternate text",
+      "subfieldPath": [
+        {
+          "name": "image"
+        },
+        {
+          "name": "alternateText"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "orderUrl",
+      "header": "Order Url \u003e Display Url",
+      "subfieldPath": [
+        {
+          "name": "displayUrl"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "googleAdministratorEmail",
+      "header": "googleAdministratorEmail",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "emails",
+      "header": "emails",
+      "subfieldPath": []
+    },
+    {
+      "fieldFormatConfig": {
+        "listDelimiter": "~"
+      },
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "appleActionLinks",
+      "header": "Apple Action Links \u003e Quick Link",
+      "listSettings": "ADD_TO_EXISTING",
+      "subfieldPath": [
+        {
+          "name": "quickLinkUrl"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "geomodifier",
+      "header": "geomodifier",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "appleCoverPhoto",
+      "header": "Apple Cover Photo \u003e Url",
+      "subfieldPath": [
+        {
+          "name": "url"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "brunchHours",
+      "header": "brunch hours \u003e Hours \u003e Wednesday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "wednesday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "websiteUrl",
+      "header": "Website Url \u003e Prefer Display Url",
+      "subfieldPath": [
+        {
+          "name": "preferDisplayUrl"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "entityId",
+      "header": "entityId",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "dineInHours",
+      "header": "DineIn Hours \u003e Reopen Date",
+      "subfieldPath": [
+        {
+          "name": "reopenDate"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "kitchenHours",
+      "header": "Kitchen Hours \u003e Hours \u003e Friday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "friday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "pickupHours",
+      "header": "Pickup Hours \u003e Hours \u003e Saturday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "saturday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "brunchHours",
+      "header": "brunch hours \u003e Hours \u003e Friday ",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "friday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "frequentlyAskedQuestions",
+      "header": "frequentlyaskedquestions answers",
+      "listSettings": "ADD_TO_EXISTING",
+      "subfieldPath": [
+        {
+          "name": "answer"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "facebookWebsiteOverride",
+      "header": "facebookWebsiteOverride",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "deliveryHours",
+      "header": "Delivery Hours \u003e Hours \u003e Saturday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "saturday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "takeoutHours",
+      "header": "Takeout Hours \u003e Reopen Date",
+      "subfieldPath": [
+        {
+          "name": "reopenDate"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "hours",
+      "header": "Hours \u003e Holiday Hours",
+      "listSettings": "ADD_TO_EXISTING",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOLIDAY_HOURS_COMBINED_DATE_TIME_FORMAT",
+            "listDelimiter": "$"
+          },
+          "name": "holidayHours"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "happyHours",
+      "header": "Happy Hours \u003e Hours \u003e Sunday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "sunday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "appleCompanyId",
+      "header": "appleCompanyId",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "pickupHours",
+      "header": "Pickup Hours \u003e Hours \u003e Thursday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "thursday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "address",
+      "header": "Address \u003e Line 2",
+      "subfieldPath": [
+        {
+          "name": "line2"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "googleWebsiteOverride",
+      "header": "googleWebsiteOverride",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "facebookPageUrl",
+      "header": "facebookPageUrl",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "uberTripBranding",
+      "header": "Uber Trip branding \u003e text",
+      "subfieldPath": [
+        {
+          "name": "text"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "googleMyBusinessLabels",
+      "header": "googleMyBusinessLabels",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "kitchenHours",
+      "header": "Kitchen Hours \u003e Hours \u003e Monday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "monday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "mainPhone",
+      "header": "mainPhone",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "address",
+      "header": "Address \u003e Line 1",
+      "subfieldPath": [
+        {
+          "name": "line1"
+        }
+      ]
+    },
+    {
+      "fieldFormatConfig": {
+        "listDelimiter": "~"
+      },
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "photoGallery",
+      "header": "Photo Gallery \u003e Decription",
+      "listSettings": "ADD_TO_EXISTING",
+      "subfieldPath": [
+        {
+          "name": "description"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "featuredMessage",
+      "header": "Featured message \u003e Url",
+      "subfieldPath": [
+        {
+          "name": "url"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "accessHours",
+      "header": "access hours \u003e Hours \u003e Saturday ",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "saturday"
+        }
+      ]
+    },
+    {
+      "fieldFormatConfig": {
+        "listDelimiter": "~"
+      },
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "videos",
+      "header": "Videos \u003e Description",
+      "listSettings": "ADD_TO_EXISTING",
+      "subfieldPath": [
+        {
+          "name": "description"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "address",
+      "header": "Address \u003e Extra Description",
+      "subfieldPath": [
+        {
+          "name": "extraDescription"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "orderUrl",
+      "header": "Order Url \u003e Url",
+      "subfieldPath": [
+        {
+          "name": "url"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "address",
+      "header": "Address \u003e Region",
+      "subfieldPath": [
+        {
+          "name": "region"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "blackOwnedBusiness",
+      "header": "blackOwnedBusiness",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "takeoutHours",
+      "header": "Takeout Hours \u003e Hours \u003e Friday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "friday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "fax",
+      "header": "fax",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "landingPageUrl",
+      "header": "landingPageUrl",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "takeoutHours",
+      "header": "Takeout Hours \u003e Hours \u003e Monday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "monday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "accessHours",
+      "header": "Access Hours \u003e Holiday Hours",
+      "listSettings": "ADD_TO_EXISTING",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOLIDAY_HOURS_COMBINED_DATE_TIME_FORMAT",
+            "listDelimiter": "$"
+          },
+          "name": "holidayHours"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "customKeywords",
+      "header": "customKeywords",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "logo",
+      "header": "Logo \u003e Url",
+      "subfieldPath": [
+        {
+          "name": "image"
+        },
+        {
+          "name": "url"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "onlineServiceHours",
+      "header": "Online Service Hours \u003e Hours \u003e Monday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "monday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "bingAdProfession",
+      "header": "bingAdProfession",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "fullyVaccinatedStaff",
+      "header": "fullyVaccinatedStaff",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "pickupHours",
+      "header": "Pickup Hours \u003e Hours \u003e Sunday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "sunday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "happyHours",
+      "header": "Happy Hours \u003e Hours \u003e Thursday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "thursday"
+        }
+      ]
+    },
+    {
+      "fieldFormatConfig": {
+        "listDelimiter": "~"
+      },
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "serviceAreaPlaces",
+      "header": "Service Area \u003e Type",
+      "listSettings": "ADD_TO_EXISTING",
+      "subfieldPath": [
+        {
+          "name": "type"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "routableCoordinate",
+      "header": "Yext Routable Coordinate \u003e Long",
+      "subfieldPath": [
+        {
+          "name": "longitude"
+        }
+      ]
+    },
+    {
+      "fieldFormatConfig": {
+        "listDelimiter": "~"
+      },
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "rankTrackingCompetitors",
+      "header": "Ranked Competitors \u003e Website",
+      "listSettings": "ADD_TO_EXISTING",
+      "subfieldPath": [
+        {
+          "name": "website"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "reservationUrl",
+      "header": "Reservation Url \u003e Display Url",
+      "subfieldPath": [
+        {
+          "name": "displayUrl"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "mobilePhone",
+      "header": "mobilePhone",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "brunchHours",
+      "header": "brunch hours \u003e Hours \u003e Tuesday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "tuesday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "seniorHours",
+      "header": "Senior Hours \u003e Hours \u003e Thursday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "thursday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "reservationUrl",
+      "header": "Reservation Url \u003e Url",
+      "subfieldPath": [
+        {
+          "name": "url"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "dineInHours",
+      "header": "Dine In Hours \u003e Hours \u003e Tuesday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "tuesday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "deliverListingsWithoutGeocode",
+      "header": "deliverListingsWithoutGeocode",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "kitchenHours",
+      "header": "Kitchen Hours \u003e Hours \u003e Sunday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "sunday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "onlineServiceHours",
+      "header": "Online Service Hours \u003e Hours \u003e Friday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "friday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "seniorHours",
+      "header": "Senior Hours \u003e Hours \u003e Saturday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "saturday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "yearEstablished",
+      "header": "yearEstablished",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "takeoutHours",
+      "header": "Takeout Hours \u003e Hours \u003e Thursday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "thursday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "hours",
+      "header": "Hours \u003e Reopen Date",
+      "subfieldPath": [
+        {
+          "name": "reopenDate"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "driveThroughHours",
+      "header": "Drive Through Hours \u003e Hours \u003e Saturday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "saturday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "uberLink",
+      "header": "Uber Link \u003e Presentation",
+      "subfieldPath": [
+        {
+          "name": "presentation"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "accessHours",
+      "header": "access hours \u003e Hours \u003e Wednesday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "wednesday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "cityCoordinate",
+      "header": "City Coordinate \u003e Lat",
+      "subfieldPath": [
+        {
+          "name": "latitude"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "walkableCoordinate",
+      "header": "Yext Walkable Coordinate \u003e Long",
+      "subfieldPath": [
+        {
+          "name": "longitude"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "uberTripBranding",
+      "header": "Uber Trip branding \u003e Url",
+      "subfieldPath": [
+        {
+          "name": "url"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "products",
+      "header": "products",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "bingAdCampaign",
+      "header": "bingAdCampaign",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "facebookCoverPhoto",
+      "header": "facebookCoverPhoto",
+      "subfieldPath": [
+        {
+          "name": "alternateText"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "covid19InformationUrl",
+      "header": "covid19InformationUrl",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "dropoffCoordinate",
+      "header": "Yext Dropoff Coordinate \u003e Long",
+      "subfieldPath": [
+        {
+          "name": "longitude"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "deliveryUrl",
+      "header": "deliveryUrl",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "hours",
+      "header": "Hours \u003e tuesday ",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "tuesday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "seniorHours",
+      "header": "Senior Hours \u003e Holiday Hours",
+      "listSettings": "ADD_TO_EXISTING",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOLIDAY_HOURS_COMBINED_DATE_TIME_FORMAT",
+            "listDelimiter": "$"
+          },
+          "name": "holidayHours"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "logo",
+      "header": "Logo \u003e Clickthrough Url",
+      "subfieldPath": [
+        {
+          "name": "clickthroughUrl"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "googleEntityRelationship",
+      "header": "Google Entity Relationship \u003e PlaceID",
+      "subfieldPath": [
+        {
+          "name": "placeId"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "reservationUrl",
+      "header": "Reservation Url \u003e Prefer Display Url",
+      "subfieldPath": [
+        {
+          "name": "preferDisplayUrl"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "takeoutHours",
+      "header": "Takeout Hours \u003e Hours \u003e Sunday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "sunday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "bingWebsiteOverride",
+      "header": "bingWebsiteOverride",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "instagramHandle",
+      "header": "instagramHandle",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "brunchHours",
+      "header": "brunch hours \u003e Hours \u003e Sunday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "sunday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "pickupHours",
+      "header": "Pickup Hours \u003e Hours \u003e Monday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "monday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "priceRange",
+      "header": "priceRange",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "what3WordsAddress",
+      "header": "what3WordsAddress",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "youTubeChannelUrl",
+      "header": "youTubeChannelUrl",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "accessHours",
+      "header": "access hours \u003e Hours \u003e Thursday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "thursday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "happyHours",
+      "header": "Happy Hours \u003e Reopen Date",
+      "subfieldPath": [
+        {
+          "name": "reopenDate"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "proofOfVaccinationRequired",
+      "header": "proofOfVaccinationRequired",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "pickupHours",
+      "header": "Pickup Hours \u003e Holiday Hours",
+      "listSettings": "ADD_TO_EXISTING",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOLIDAY_HOURS_COMBINED_DATE_TIME_FORMAT",
+            "listDelimiter": "$"
+          },
+          "name": "holidayHours"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "appleDisplayName",
+      "header": "appleDisplayName",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "impressum",
+      "header": "impressum",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "onlineServiceHours",
+      "header": "Online Service Hours \u003e Hours \u003e Saturday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "saturday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "walkableCoordinate",
+      "header": "Yext Walkable Coordinate \u003e Lat",
+      "subfieldPath": [
+        {
+          "name": "latitude"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "paymentOptions",
+      "header": "paymentOptions",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "deliveryHours",
+      "header": "Delivery Hours \u003e Hours \u003e Tuesday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "tuesday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "ttyPhone",
+      "header": "ttyPhone",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "cityCoordinate",
+      "header": "City Coordinate \u003e Long",
+      "subfieldPath": [
+        {
+          "name": "longitude"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "pickupHours",
+      "header": "Pickup Hours \u003e Hours \u003e Tuesday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "tuesday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "featuredMessage",
+      "header": "featuredMessage",
+      "subfieldPath": [
+        {
+          "name": "description"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "specialities",
+      "header": "specialities",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "dineInHours",
+      "header": "Dine In Hours \u003e Hours \u003e Monday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "monday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "bingParentLocation",
+      "header": "bingParentLocation",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "linkedInUrl",
+      "header": "linkedInUrl",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "driveThroughHours",
+      "header": "Drive Through Hours \u003e Hours \u003e Thursday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "thursday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "menuUrl",
+      "header": "Menu URL \u003e url",
+      "subfieldPath": [
+        {
+          "name": "url"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "address",
+      "header": "Address \u003e Country Code",
+      "subfieldPath": [
+        {
+          "name": "countryCode"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "menuUrl",
+      "header": "Menu URL \u003e display Url",
+      "subfieldPath": [
+        {
+          "name": "displayUrl"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "alternatePhone",
+      "header": "alternatePhone",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "driveThroughHours",
+      "header": "Drive Through Hours \u003e Hours \u003e Tuesday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "tuesday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "happyHours",
+      "header": "Happy Hours \u003e Hours \u003e Saturday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "saturday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "seniorHours",
+      "header": "Senior Hours \u003e Hours \u003e Tuesday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "tuesday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "googleProfilePhoto",
+      "header": "Google Profile Photo \u003e Url",
+      "subfieldPath": [
+        {
+          "name": "url"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "happyHours",
+      "header": "Happy Hours \u003e Hours \u003e Friday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "friday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "twitterHandle",
+      "header": "twitterHandle",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "hours",
+      "header": "Hours \u003e Thursday ",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "thursday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "happyHours",
+      "header": "Happy Hours \u003e Holiday Hours",
+      "listSettings": "ADD_TO_EXISTING",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOLIDAY_HOURS_COMBINED_DATE_TIME_FORMAT",
+            "listDelimiter": "$"
+          },
+          "name": "holidayHours"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "rankTrackingQueryTemplates",
+      "header": "rankTrackingQueryTemplates",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "frequentlyAskedQuestions",
+      "header": "frequentlyaskedquestions questions",
+      "listSettings": "ADD_TO_EXISTING",
+      "subfieldPath": [
+        {
+          "name": "question"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "phoneticName",
+      "header": "phoneticName",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "facebookCoverPhoto",
+      "header": "Facebook Cover Photo \u003e Url",
+      "subfieldPath": [
+        {
+          "name": "url"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "timezone",
+      "header": "timezone",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "dineInHours",
+      "header": "Dine In Hours \u003e Hours \u003e Thursday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "thursday"
+        }
+      ]
+    },
+    {
+      "fieldFormatConfig": {
+        "listDelimiter": "~"
+      },
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "photoGallery",
+      "header": "Photo Gallery \u003e ClickTroughUrl",
+      "listSettings": "ADD_TO_EXISTING",
+      "subfieldPath": [
+        {
+          "name": "clickthroughUrl"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "dineInHours",
+      "header": "DineIn Hours \u003e Holiday Hours",
+      "listSettings": "ADD_TO_EXISTING",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOLIDAY_HOURS_COMBINED_DATE_TIME_FORMAT",
+            "listDelimiter": "$"
+          },
+          "name": "holidayHours"
+        }
+      ]
+    },
+    {
+      "fieldFormatConfig": {
+        "listDelimiter": "~"
+      },
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "photoGallery",
+      "header": "Photo Gallery \u003e Alternate Text",
+      "listSettings": "ADD_TO_EXISTING",
+      "subfieldPath": [
+        {
+          "name": "image"
+        },
+        {
+          "name": "alternateText"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "websiteUrl",
+      "header": "Website Url \u003e Display Url",
+      "subfieldPath": [
+        {
+          "name": "displayUrl"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "googleCoverPhoto",
+      "header": "Google Cover Photo \u003e Url",
+      "subfieldPath": [
+        {
+          "name": "url"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "covidMessaging",
+      "header": "covidMessaging",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "facebookDescriptor",
+      "header": "facebookDescriptor",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "brunchHours",
+      "header": "Brunch Hours \u003e Reopen Date",
+      "subfieldPath": [
+        {
+          "name": "reopenDate"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "kitchenHours",
+      "header": "Kitchen Hours \u003e Hours \u003e Tuesday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "tuesday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "onlineServiceHours",
+      "header": "Online Service Hours \u003e Hours \u003e Tuesday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "tuesday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "accessHours",
+      "header": "access hours \u003e Hours \u003e Friday ",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "friday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "happyHours",
+      "header": "Happy Hours \u003e Hours \u003e Tuesday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "tuesday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "accessHours",
+      "header": "Access Hours \u003e Reopen Date",
+      "subfieldPath": [
+        {
+          "name": "reopenDate"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "googlePlaceId",
+      "header": "googlePlaceId",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "kitchenHours",
+      "header": "Kitchen Hours \u003e Hours \u003e Saturday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "saturday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "appleCoverPhoto",
+      "header": "appleCoverPhoto",
+      "subfieldPath": [
+        {
+          "name": "alternateText"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "uberTripBranding",
+      "header": "Uber Trip Branding \u003e Description",
+      "subfieldPath": [
+        {
+          "name": "description"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "bingRelationshipType",
+      "header": "bingRelationshipType",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "googleProfilePhoto",
+      "header": "googleProfilePhoto",
+      "subfieldPath": [
+        {
+          "name": "alternateText"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "dineInHours",
+      "header": "Dine In Hours \u003e Hours \u003e Saturday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "saturday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "onlineServiceHours",
+      "header": "Online Service Hours \u003e Hours \u003e Sunday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "sunday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "seniorHours",
+      "header": "Senior Hours \u003e Hours \u003e Sunday",
+      "subfieldPath": [
+        {
+          "fieldFormatConfig": {
+            "fieldDataFormat": "HOURS_INTERVAL_FORMAT"
+          },
+          "name": "sunday"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "menuUrl",
+      "header": "Menu URL \u003e prefer Display Url",
+      "subfieldPath": [
+        {
+          "name": "preferDisplayUrl"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "pickupAndDeliveryServices",
+      "header": "pickupAndDeliveryServices",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "bodyV2",
+      "header": "bodyV2",
+      "subfieldPath": [
+        {
+          "name": "markdown"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "externalArticlePostDate",
+      "header": "externalArticlePostDate",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "externalArticleUpdateDate",
+      "header": "externalArticleUpdateDate",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "promoted",
+      "header": "promoted",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "shortDescriptionV2",
+      "header": "shortDescriptionV2",
+      "subfieldPath": [
+        {
+          "name": "json"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "voteCount",
+      "header": "voteCount",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "dropInvalidMapping": false,
+      "field": "voteSum",
+      "header": "voteSum",
+      "subfieldPath": []
+    }
+  ],
+  "comprehensiveModeConfig": {
+    "comprehensiveSet": "ENTITIES_CREATED_BY_THIS_CONNECTOR",
+    "actionOnMissingEntities": "DELETE"
+  }
+}
