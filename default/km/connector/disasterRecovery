@@ -1,7 +1,7 @@
 {
   "$id": "disasterRecovery",
   "$schema": "https://schema.yext.com/config/km/connector/v7",
-  "displayName": "Entity Restoration",
+  "displayName": "Disaster Recovery",
   "source": {
     "sourceConfig": {
       "fileUploadConfig": {
